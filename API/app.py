@@ -12,12 +12,21 @@ def get_familia():
 
 
 @app.get("/superheroesDC")
-def get_superheroes():
+def get_superheroesdc():
     rows = ["Superman", "Batman", "Flash", "Linterna Verde", "Mujer maravilla", "Aquaman", "Shazam", "Cyborg"]
+    
     return rows
 
 
 @app.get("/cursosPlatzi")
-def get_superheroes():
+def get_cursosplatzi():
     rows = ["Azure", "Bash", "Python", "GitHub", "Power BI", "Cloud", "AWS", "Terraform"]
+    
+    return rows
+
+
+@app.get("/cursosUdemy")
+def get_cursoudemy():
+    rows = ["Azure", "AWS", "WEB_SCRAPING"]
+    
     return rows
