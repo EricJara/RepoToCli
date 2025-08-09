@@ -8,6 +8,7 @@ app = FastAPI()
 @app.get("/familia")
 def get_familia():
     rows = ["Amin", "Marce", "Miranda"]
+    
     return rows
 
 
@@ -19,8 +20,16 @@ def get_superheroesdc():
 
 
 @app.get("/cursosPlatzi")
-def get_cursosplatzi():
+def get_superheroes():
     rows = ["Azure", "Bash", "Python", "GitHub", "Power BI", "Cloud", "AWS", "Terraform"]
+
+    return rows
+
+
+@app.get ("/superheroesMarvel")
+def get_superheroesmarvel():
+    rows = ["Hulk", "Iroman", "Capitan America", "Spiderman"]
+    
     
     return rows
 
